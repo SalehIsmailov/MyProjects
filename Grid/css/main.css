@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    margin-top: .2em;
+    font-size: 10px;
+    background: rgba(42, 142, 255, .5);
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 3em;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, auto 1fr);
+    margin: 1em;
+    width: 90%;
+    margin: auto;
+}
+
+.grid-items {
+    display: inline-grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
+    width: 80%;
+    margin: auto;
+
+}
+
+.grid-items a {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    position: relative;
+    opacity: 1;
+}
+
+.grid-items li {
+    background: rgba(42, 142, 255, .6);
+    min-width: 40%;
+    max-width: 70%;
+    padding: .6em 0;
+}
+.grid-items li:hover {
+    background: rgba(42, 142, 255, 0);
+}
+
+/* After-Pseduo */
+
+nav a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -12px;
+    background: #f00;
+    height: 3px;
+    transform: scale(0,1);
+    transition: transform ease-in-out 250ms;
+}
+
+nav a:hover::after {
+    transform: scale(1,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
