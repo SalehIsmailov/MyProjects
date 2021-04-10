@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    position: relative;
+    min-height: 800px;
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: block;
+    min-height: 450px;
+    width: 300px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    /*  border-radius: 10px;
+        Cabbar buna bax niye her terefi deyishmir ki radiusun
+    
+    */
+}
+
+
+.card .image {
+    overflow: hidden;
+    height: 350px;
+}
+
+.card .image img {
+    height: 100%;
+    width: 100%;
+    transition: 0.8s;
+}
+
+.content {
+    padding: 5px;
+    line-height: 1em;
+}
+.content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.content .sub-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    padding: 5px 0;
+}
+
+.content button {
+    border: none;
+    background: red;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    transition: .8s ease;
+    margin: 5px;
+}
+
+.content button:hover {
+    transform: scale(1.1);
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.container .image img:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+
+}
